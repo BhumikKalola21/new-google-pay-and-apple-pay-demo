@@ -34,6 +34,7 @@ export default {
 
     expressCheckoutElement.on("ready", ({ availablePaymentMethods }) => {
       if (availablePaymentMethods.length > 0) {
+        alert('availablePaymentMethods' + availablePaymentMethods)
         document.getElementById("express-checkout-element").style.visibility = "visible";
       }
     });
