@@ -33,7 +33,7 @@ export default {
     expressCheckoutElement.mount("#express-checkout-element");
 
     expressCheckoutElement.on("ready", ({ availablePaymentMethods }) => {
-      alert(availablePaymentMethods)
+      alert(JSON.stringify(availablePaymentMethods))
       if (availablePaymentMethods.length > 0) {
         document.getElementById("express-checkout-element").style.visibility = "visible";
       }
