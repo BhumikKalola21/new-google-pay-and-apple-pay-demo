@@ -33,8 +33,8 @@ export default {
     expressCheckoutElement.mount("#express-checkout-element");
 
     expressCheckoutElement.on("ready", ({ availablePaymentMethods }) => {
+      alert(availablePaymentMethods)
       if (availablePaymentMethods.length > 0) {
-        alert('availablePaymentMethods' + availablePaymentMethods)
         document.getElementById("express-checkout-element").style.visibility = "visible";
       }
     });
