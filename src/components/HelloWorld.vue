@@ -15,7 +15,7 @@ export default {
     console.log('VUE_APP_STRIPE_PUBLIC_KEY',process.env.VUE_APP_STRIPE_SECRET_KEY);
     const stripe = await loadStripe(process.env.VUE_APP_STRIPE_PUBLIC_KEY);
 
-    const response = await fetch("https://rf8f5d67-3000.inc1.devtunnels.ms/create-intent", {
+    const response = await fetch("https://8blkr6mj-3001.inc1.devtunnels.ms/api/v2/subscription/test-apple-pay/67a1d4ff2baca465ed21d0b7", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount: 1099 }),
