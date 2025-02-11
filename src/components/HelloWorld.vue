@@ -21,7 +21,7 @@ export default {
       mode: "payment",
       amount: 500,
       currency: "usd",
-      payment_method_types: ["card", "link","paypal","amazon_pay","apple_pay","google_pay"],
+      payment_method_types: ["card", "link","paypal","amazon_pay"],
     });
 
     const expressCheckoutElement = elements.create("expressCheckout");
