@@ -19,8 +19,9 @@ export default {
     const stripe = await loadStripe(process.env.VUE_APP_STRIPE_PUBLIC_KEY);
     const elements = stripe.elements({
       mode: "payment",
-      amount: 1099,
+      amount: 500,
       currency: "usd",
+      payment_method_types: ["card", "link","paypal","amazon_pay","apple_pay","google_pay"],
     });
 
     const expressCheckoutElement = elements.create("expressCheckout");
