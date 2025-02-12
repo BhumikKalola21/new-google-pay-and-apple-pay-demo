@@ -58,7 +58,7 @@ export default {
 
       // Step 2: Send Confirmation Token to Backend
       const response = await fetch(
-        "https://8blkr6mj-3001.inc1.devtunnels.ms/api/v2/subscription/test-apple-pay/67a1d4ff2baca465ed21d0b7",
+        "https://applepay-backend-k26203b3y-bhumikkalola21s-projects.vercel.app/test-apple-pay",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
